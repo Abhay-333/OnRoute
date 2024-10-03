@@ -12,3 +12,9 @@ body {
   height: 100%;
   width: 100%;
 }
+
+#nav{
+  background-color: rgba(0, 0, 0, 0.425);
+  backdrop-filter: blur(10px);
+  /* filter: blur(10px); */
+}

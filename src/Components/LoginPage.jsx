@@ -22,12 +22,13 @@ const LoginPage = () => {
     const provider = new GoogleAuthProvider();
     console.log(provider);
     const result = await signInWithPopup(auth, provider);
+
+    console.log(result)
+
     if(result && category === 'rider'){
       navigate('/rider')
-      console.log('display rider component')
     }else if(result && category === 'passenger'){
       navigate('/passenger')
-      console.log('display passenger component')
     }
 
     console.log(result.user);

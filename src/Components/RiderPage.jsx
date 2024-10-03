@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const RiderPage = () => {
-  return <div className="w-full bg-gray-500 h-screen flex items-center justify-center">
+  // https://www.google.com/maps?q=${latitude},${longitude}
+  const [ridersData,setRidersData] = useState([
+   {latitude: ``, longitude: ``, },
+  ])
+
+  return <div className="w-full bg-black h-screen flex items-center justify-center">
   <div className="bg-white p-6 rounded-lg shadow-md w-[30rem] mx-auto">
   <h2 className="text-2xl font-bold mb-4 text-center">Rider Journey</h2>
   <form>
