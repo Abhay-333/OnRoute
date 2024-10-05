@@ -8,24 +8,28 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-
+import Location from "./Components/Location";
 function App() {
   return (
     <div className="w-full h-screen">
       <Navbar />
-      
+
       <Routes>
         <Route path="/" element={<LoginPage />}></Route>
         <Route path="/home" element={<Home />}></Route>
+
+        <Route path="/passenger" element={<Passenger />}></Route>
+        <Route path="/passenger/location" element={<Location />}></Route>
+
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
 
-        <Route path="/passenger" element={<Passenger />}></Route>
+        <Route path="/rider" element={<RiderPage />}></Route>
       </Routes>
 
-      <Outlet/>
+      <Outlet />
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

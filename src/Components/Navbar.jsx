@@ -41,7 +41,7 @@ const Navbar = () => {
               </h1>
             </Link>
 
-            <Link to="/login" element={<Home />}>
+            <Link to="/" element={<Home />}>
               <button className="py-3 bg-[#2669D4] px-6 rounded-full font-semibold transition duration-300">
                 Login
               </button>
